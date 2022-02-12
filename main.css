@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;800;900&display=swap');
 
 * {
   box-sizing: border-box;
@@ -116,8 +116,30 @@ body {
 
 .hero {
   font-family: 'Rubik', sans-serif;
-  padding: 200px 0 0 100px;
+  padding: 100px 0 0 100px;
   color: #fff;
+}
+.header__site {
+  padding: 15px 15px 15px 100px;
+  justify-content: space-between;
+  display: none;
+}
+
+.button__menu {
+  background-color: #2FBF71;
+  border:none;
+  padding: 5px;
+}
+
+.bx-menu {
+  font-size: 34px;
+}
+
+.hero__logo {
+  font-size: 25px;
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 800;
 }
 
 .hero__img {
@@ -170,8 +192,7 @@ body {
   background-color: #10101A;
 }
 
-.hero__img {
-}
+
 
 @media screen and (max-width: 1200px) {
   .col-lg-2 {
@@ -180,6 +201,11 @@ body {
   .col-lg-9 {
     width: 100%;
   }
+  .header__site {
+    display: flex;
+    justify-content: space-between;
+  }
+  
 }
 
 @media screen and (max-width: 992px) {
@@ -205,6 +231,10 @@ body {
   .hero {
     padding: 50px 50px 0 50px;
 
+  }
+  
+  .header__site {
+    padding-left: 50px;
   }
   
 }
