@@ -463,9 +463,115 @@ body {
   display: inline-block;
 }
 
+.experience__part {
+  position: relative;
+  padding-left: 70px;
+}
+.experience__img {
+  width: 150px;
+  height: 150px;
+}
 
+.experience {
+  font-family: "Rubik", monospac;
+  color: #fff;
+}
 
+.experience__title {
+  font-weight: 300;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-bottom: 35px;
+}
+.experience__title::after {
+  margin-top: 5px;
+  content: '';
+  width: 70px;
+  height: 1px;
+  background-color: #2FBF71;
+  display: block;
+}
+.experience__title::before {
+  position: absolute;
+  top: 4.2%;
+  left: 13%;
+  content: '';
+  width: 13px;
+  height: 13px;
+  background-color: #2FBF71;
+  border-radius: 50%;
+  display: block;
+}
 
+.experience__block {
+  background-color: #000;
+  display: flex;
+  padding: 35px; 
+  margin-bottom: 2px;
+}
+
+.experience__about {
+  position: relative;
+  padding-left: 30px;
+}
+
+.experience__link {
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  background-color: #2FBF71;
+}
+
+.experience__job {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.experience__desc {
+  line-height: 1.6;
+  max-width: 100%;
+  font-weight: 300;
+  font-size: 15px;
+  margin-bottom: 13px;
+  opacity: 0.7;
+}
+
+.contact__part {
+  font-family: "Rubik", monospac;
+  position: relative;
+  padding-left: 70px;
+  color: #fff;
+
+}
+
+.contact__title {
+  font-weight: 300;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-bottom: 35px;
+}
+.contact__block {
+  background: #0b0b13;
+  padding: 30px;
+  max-width: 30%;
+}
+.contact__block-title {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.contact__text {
+}
+.contact__street {
+}
+.contact__email {
+}
+.contact__number {
+}
 
 
 
@@ -543,6 +649,23 @@ body {
   .education__list {
     display: flex;
     flex-direction: column;
+  }
+
+  .experience__block {
+    flex-direction: column;
+  }
+
+  .experience__img {
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+
+  .experience__desc:nth-child(3) {
+    margin-bottom: 50px;
+  }
+
+  .experience__link {
+    top: 23%;
   }
 }
 
