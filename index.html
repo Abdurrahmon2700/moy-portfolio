@@ -188,25 +188,133 @@
             </div>
           </div>
         </div>
-        <div class="contact"> 
-          <div class="col-lg-12" style="border: 2px solid red; width: 100%; height: 100vh;">
+        <div class="portfolio">
+          <div class="portfolio__part">
+            <h2 class="portfolio__title">portfolio</h2>
+          </div>
+          <div class="portfolio__block">  
+            <ul class="portfolio__list">
+              <li class="portfolio__item">
+                <img class="portfolio__hover" src="img/about-me.jpg" alt="" width="240" height="173">
+                <div class="portfolio__icons">
+                  <i class='bx bxl-github  portfolio__icon'></i>
+                  <i class='bx bxl-netlify portfolio__icon ' ></i>
+                </div>
+              </li>
+              <li class="portfolio__item">
+                <img class="portfolio__hover" src="img/about-me.jpg" alt="" width="240" height="173">
+                <div class="portfolio__icons">
+                  <i class='bx bxl-github  portfolio__icon'></i>
+                  <i class='bx bxl-netlify portfolio__icon ' ></i>
+                </div>
+              </li>
+              <li class="portfolio__item">
+                <img class="portfolio__hover" src="img/about-me.jpg" alt="" width="240" height="173">
+                <div class="portfolio__icons">
+                  <i class='bx bxl-github  portfolio__icon'></i>
+                  <i class='bx bxl-netlify portfolio__icon ' ></i>
+                </div>
+              </li>
+              <li class="portfolio__item">
+                <img class="portfolio__hover" src="img/about-me.jpg" alt="" width="240" height="173">
+                <div class="portfolio__icons">
+                  <i class='bx bxl-github  portfolio__icon'></i>
+                  <i class='bx bxl-netlify portfolio__icon ' ></i>
+                </div>
+              </li>
+            </ul>
+            <ul class="portfolio__list">
+              <li class="portfolio__item">
+                <img class="portfolio__hover" src="img/about-me.jpg" alt="" width="240" height="173">
+                <div class="portfolio__icons">
+                  <i class='bx bxl-github  portfolio__icon'></i>
+                  <i class='bx bxl-netlify portfolio__icon ' ></i>
+                </div>
+              </li>
+              <li class="portfolio__item">
+                <img class="portfolio__hover" src="img/about-me.jpg" alt="" width="240" height="173">
+                <div class="portfolio__icons">
+                  <i class='bx bxl-github  portfolio__icon'></i>
+                  <i class='bx bxl-netlify portfolio__icon ' ></i>
+                </div>
+              </li>
+              <li class="portfolio__item">
+                <img class="portfolio__hover" src="img/about-me.jpg" alt="" width="240" height="173">
+                <div class="portfolio__icons">
+                  <i class='bx bxl-github  portfolio__icon'></i>
+                  <i class='bx bxl-netlify portfolio__icon ' ></i>
+                </div>
+              </li>
+              <li class="portfolio__item">
+                <img class="portfolio__hover" src="img/about-me.jpg" alt="" width="240" height="173">
+                <div class="portfolio__icons">
+                  <i class='bx bxl-github  portfolio__icon'></i>
+                  <i class='bx bxl-netlify portfolio__icon ' ></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="col-lg-12">
             <div class="contact__part">
               <h2 class="contact__title">get in touch.</h2>
-              <div class="contact__block">
-                <h3 class="contact__block-title">What’s your story? Get in touch</h3>
-                <p class="contact__text">Always available for freelancing if the right project comes along, Feel free to contact me.</p>
-                <p class="contact__street">Toshkent city Chilonzor 10 quarter</p>
-                <p class="contact__email">sabrin1998@inbox.ru</p>
-                <p class="contact__number">+998942752700</p>
-              </div>
-
-
-
-
-              <div>
-                <input type="text">
+              <div class="row">
+                <div class="contact__block">
+                  <div class="contact__info">
+                    <h3 class="contact__block-title">What’s your story? Get in touch</h3>
+                    <p class="contact__text">Always available for freelancing if the right project comes along, Feel
+                      free to contact me.</p>
+                    <p class="contact__street"> <i class='bx bx-map-alt contact__icon'
+                        style='color:#2fbf71'></i>Toshkent city Chilonzor 10 quarter</p>
+                    <p class="contact__email"><i class='bx bxl-gmail contact__icon'
+                        style='color:#2fbf71'></i>sabrin1998@inbox.ru</p>
+                    <p class="contact__number"><i class='bx bx-mobile-alt contact__icon' style='color:#2fbf71'></i></i>
+                      +998942752700</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="contact__input">
+                    <div class="input__block">
+                      <h3 class="input__title">say something</h3>
+                      <form id="contact-form" method="POST">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                                <input name="Name" id="name" placeholder="Name *" class="form-control" type="text">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                <input name="Email" id="email" placeholder="Email *" class="form-control" type="email">
+                             </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group">
+                              <input name="Subject" id="subject" placeholder="Subject *" class="form-control" type="text">
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea name="message" id="message" placeholder="Your message *" rows="5" class="form-control "></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="send">
+                                <button class="px-btn px-btn-theme" onclick="send_mail()" type="button" value="Send"> send message</button>
+                            </div>
+                            <span id="suce_message" class="text-success" style="display: none">Message Sent Successfully</span>
+                            <span id="err_message" class="text-danger" style="display: none">Message Sending Failed</span>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
               </div>
             </div>
+          </div>
+          <div class="contact__map">
+            <div style="position:relative;overflow:hidden;"><a href="https://yandex.com/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Tashkent</a><a href="https://yandex.com/maps/10335/tashkent/house/YkAYdAdgSEIEQFprfX55dX1iZw==/?ll=69.200364%2C41.284129&utm_medium=mapframe&utm_source=maps&z=18.5" style="color:#eee;font-size:12px;position:absolute;top:14px;">10-mavze, 5 — Yandex.Maps</a><iframe src="https://yandex.com/map-widget/v1/-/CCU5FSwy8C" width="100%" height="300px" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
           </div>
         </div>
       </div>
