@@ -14,6 +14,9 @@ body {
   position: fixed;
   height: 100vh;
 }
+.show {
+  display: block;
+}
 
 .nav__part {
   position: relative;
@@ -37,6 +40,7 @@ body {
   padding-top: 50px;
   width: 254px;
   background-color: #0C0C14;
+
 }
 
 .my__name {
@@ -562,23 +566,23 @@ body {
 
 .portfolio__list {
   display: flex;
- 
-  list-style-type: none;
+  justify-content: center;
 
 }
 .portfolio__item {
   margin: 20px 20px 0;
 }
 .portfolio__hover {
-  
+  width: 240px;
+  height: 173px;
 }
 .portfolio__icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 
 }
 .portfolio__item:hover .portfolio__icon {
-  transform: translateY(-80px);
+  transform: translateY(-50px);
   transition: all 0.4s ease-in;
   opacity: 1;
 }
@@ -586,14 +590,18 @@ body {
 
 .portfolio__icon {
   font-size: 30px;
-  color: #fff;
+  color: #000;
   transition: all 0.4s ease-in;
   opacity: 0;
-
-
+  margin:  0 10px;
 }
-.bxl-netlify {
 
+.bxl-github {
+  color: #000;
+}
+
+.bxl-netlify {
+  color: #165934;
 }
 
 
@@ -854,6 +862,15 @@ body {
 
   .header__site {
     padding-left: 50px;
+  }
+
+  .portfolio__list {
+    flex-direction: column;
+  }
+
+  .contact__list {
+    display: flex;
+    flex-direction: column;
   }
 }
 
